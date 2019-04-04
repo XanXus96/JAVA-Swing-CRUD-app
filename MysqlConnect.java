@@ -10,12 +10,12 @@ public class MysqlConnect {
     public static Connection ConnectDB(){
     
         try {
-                          //com.mysql.jdbc.Driver
+                          
             Class.forName("com.mysql.jdbc.Driver");  //loading the driver
                
           
             //Establishing a Connection                               / /URL //Port No://DB Name//UID//Password
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/etudb","root","");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/yourdb","uid","password");
                                                           
           //  JOptionPane.showMessageDialog(null, "Connection Successful");
             return conn;
